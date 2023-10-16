@@ -1,0 +1,333 @@
+:root {
+  --bg-primary: #f0ece3;
+  --bg-sec: #c8ae7d;
+  --bg-third: #765827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  background-color: var(--bg-sec);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  border-bottom: solid 0.15rem var(--bg-third);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar h2 {
+  font-weight: 500;
+  color: var(--bg-primary);
+  font-size: 2.1rem;
+}
+
+.navbar span {
+  color: var(--bg-third);
+}
+
+.navbar-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-size: 1.2rem;
+  margin: 0.8rem;
+}
+
+.navbar-nav a:hover {
+  color: var(--bg-third);
+}
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.15rem solid var(--bg-third);
+  transform: scaleX(0);
+  transition: ease-in;
+  transition-duration: 0.5s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.8);
+}
+
+.navbar-icon a {
+  color: var(--bg-primary);
+  margin: 0 0.4rem;
+}
+
+.navbar-icon a:hover {
+  color: var(--bg-third);
+}
+
+/* navbar end */
+
+/* content start */
+
+/* content home start */
+.img-bg {
+  background: url(/minggu2/tugas\ 2/assets/image/uq-research-coffee-cup-2560x1440.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.content-home {
+  margin-left: 2rem;
+}
+
+.content-home h3 {
+  font-size: 3rem;
+  color: var(--bg-primary);
+  line-height: 3rem;
+}
+
+.content-home p {
+  width: 50rem;
+  color: var(--bg-primary);
+  margin-top: 20px;
+}
+
+.button {
+  font-size: 1rem;
+  margin-top: 20px;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: var(--bg-sec);
+  border: 1px solid var(--bg-third);
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+}
+
+.content-home button:hover {
+  color: var(--bg-primary);
+  width: 15rem;
+  border-radius: 10px;
+}
+/* content home end */
+
+/* content about start */
+.content-aboutUs {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-aboutUs img {
+  height: 15rem;
+}
+
+.content-aboutUs h3 {
+  font-size: 3rem;
+  color: var(--bg-sec);
+  margin: 10px auto;
+}
+
+.content-aboutUs span {
+  color: var(--bg-third);
+}
+
+.content-aboutUs p {
+  width: 40rem;
+  text-align: center;
+  color: var(--bg-third);
+}
+
+.content-aboutUs button:hover {
+  width: 7rem;
+  border-radius: 10px;
+}
+/* content about end */
+
+/* content menu start */
+
+.content-menu {
+  margin: 2rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
+
+.menu-top {
+  display: flex;
+}
+.menu-top-1 {
+  display: flex;
+  width: 50rem;
+  border-right: solid 2px var(--bg-third);
+  border-left: solid 2px var(--bg-third);
+}
+
+.icon {
+  height: 75px;
+  width: 75px;
+  color: var(--bg-third);
+}
+
+.featured {
+  color: var(--bg-third);
+  margin-top: 1rem;
+}
+
+.menu-main {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 3.2rem;
+}
+.menu-1 {
+  border: solid 1px rgba(72, 70, 70, 0.753);
+  height: 13rem;
+  width: 13rem;
+  text-align: center;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.price button {
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: var(--bg-sec);
+  color: var(--bg-primary);
+  border: 1px solid var(--bg-third);
+  padding: 2px;
+  cursor: pointer;
+}
+.price p {
+  margin-right: 40px;
+}
+.menu-1 img {
+  width: 205px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+}
+
+/* content menu end */
+
+/* content contact start */
+.content-contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--bg-third);
+}
+
+.contact-title span {
+  color: var(--bg-sec);
+}
+
+.contact-title p {
+  width: 40rem;
+}
+
+.contact-main {
+  display: flex;
+  background-color: var(--bg-third);
+  margin: 1rem 4rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50rem;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-2 {
+  width: 50px;
+  height: 50px;
+  color: var(--bg-primary);
+  margin-right: 5px;
+}
+.input {
+  width: 40rem;
+  font-size: 30px;
+  border: solid 1px var(--bg-sec);
+}
+
+.button-2 {
+  font-size: 20px;
+  width: 10rem;
+  color: var(--bg-primary);
+  background-color: var(--bg-sec);
+  border: 1px solid var(--bg-third);
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button-2:hover {
+  width: 15rem;
+  border-radius: 20px;
+  color: var(--bg-third);
+}
+/* content contact end */
+
+/* content end */
+
+/* footer start */
+.footer {
+  background-color: var(--bg-sec);
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.15rem solid var(--bg-third);
+}
+
+.footer a {
+  color: var(--bg-third);
+}
+/* footer end */
